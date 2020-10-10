@@ -1,0 +1,1 @@
+# Python除了def/class/lambda 外，其他如: if/elif/else/ try/except for/while并不能改变其作用域。
