@@ -1,0 +1,93 @@
+SQL不区分大小写
+
+----------------------------------------------------
+
+
+创建表
+
+CREATE TABLE weather (
+    city            varchar(80),
+    temp_lo         int,           -- 最低温度
+    temp_hi         int,           -- 最高温度
+    prcp            real,          -- 湿度
+    date            date
+);
+创建一个表，--直到结尾表示注释
+
+CREATE TABLE cities (
+    name            varchar(80),
+    location        point
+);
+point就是一种PostgreSQL特有数据类型
+
+----------------------------------------------------
+
+删除表
+
+DROP TABLE tablename;
+
+----------------------------------------------------
+
+查询一个表
+
+SELECT * FROM weather;
+包括选择列表、表列表以及可选条件
+
+SELECT city, temp_lo FROM weather;
+
+SELECT city, (temp_hi+temp_lo)/2 AS temp_avg, date FROM weather;
+可以写任意表达式，AS为输出列重新命名
+
+SELECT * FROM weather
+    WHERE city = 'San Francisco' AND prcp > 0.0;
+使用WHERE子句指定需要哪些行。WHERE子句包含一个布尔（真值）表达式，
+只有那些使布尔表达式为真的行才会被返回。
+在条件中可以使用常用的布尔操作符（AND、OR和NOT）。
+
+SELECT * FROM weather
+    ORDER BY city;
+使用ORDER BY排序
+
+SELECT * FROM weather
+    ORDER BY city, temp_lo;
+使用多个列名排序
+
+SELECT DISTINCT city
+    FROM weather;
+消除重复行
+
+SELECT DISTINCT city
+    FROM weather
+    ORDER BY city;
+组合使用DISTINCT和ORDER BY来保证获取一致的结果
+
+----------------------------------------------------
+
+表中插入行
+
+INSERT INTO weather VALUES ('San Francisco', 46, 50, 0.25, '1994-11-27');
+不是简单数字的常量通常必须用''包围，
+date虽然对可接收的格式相当灵活，应坚持使用类似'1994-11-27'的清晰形式
+
+INSERT INTO cities VALUES ('San Francisco', '(-194.0, 53.0)');
+
+
+INSERT INTO weather (date, city, temp_hi, temp_lo)
+    VALUES ('1994-11-29', 'Hayward', 54, 37);
+明确列出列，允许顺序不一致和忽略某些列
+
+COPY weather FROM '/Users/mac/Desktop/test.txt';
+从文件批量插入
+COPY weather TO '/Users/mac/Desktop/test.txt';
+导出到文件
+以上两种都是操作客户端文件
+
+
+
+
+
+
+
+
+
+
