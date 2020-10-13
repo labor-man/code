@@ -23,3 +23,27 @@ try:
 		print(el.text)
 except:
 	print('出现了错误：）')
+
+
+# Grabbing from muti pages
+print('Grabbing from muti pages...')
+import requests, bs4
+authors = set()
+base_url = 'http://quotes.toscrape.com/page/{}/'
+page_num = 1
+while True:
+    url = base_url.format(page_num)
+    response = requests.get(url)
+    
+    soup = bs4.BeautifulSoup(response.text, 'lxml')
+    authorEls = soup.select('.author')
+    
+    if len(authorEls) != 0:
+        authors = authors | {authorEl.getText() for authorEl in authorEls}
+    else:
+        break
+        
+    page_num += 1
+
+print('authors:')   
+print(authors)
