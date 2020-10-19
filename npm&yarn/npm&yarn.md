@@ -5,7 +5,7 @@ for proxy problems =>
 **npm**
 ```shell script
 npm config rm proxy
-npm config rm https-proxy`
+npm config rm https-proxy
 ```
 **yarn**
 ```
