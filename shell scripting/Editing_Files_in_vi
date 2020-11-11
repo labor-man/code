@@ -1,0 +1,83 @@
+The Vi Editor
+Has advanced and powerful feature
+Not intuitive
+Harder to learn than nano
+Requires a time investment
+
+The Vi Editor
+vi [file] Edit file
+vim [file] Same as vi, but more features
+view [file] Starts vim in read-only mode
+
+Vi Command Mode and Navigation
+k Up one line
+j Down one line
+h Left one character
+l Right one character
+w Right one word
+b Left one word
+^ Go to the beginning of the line
+$ Go to the end of the line
+
+Vi Insert Mode
+i Insert at the cursor position
+I Insert at the beginning of the line
+a Append after the cursor position
+A Append at the end of the line
+o Open a new line below the current line
+O Open a new line above the current line
+
+Vi Line Mode
+:w Writes (saves) the file
+:w! Forces the file to be saved
+:q Quit
+:q! Quit without saving changes
+:wq! Write and quit
+:x Same as :wq
+:n Positions the cursor at line n
+:$ Positions the cursor on the last line
+:set nu Turn on line numbering
+:set nonu Turn off line numbering
+:help [subcommand] Get help
+
+Vi Modes
+Command Esc
+Insert i I a A o O
+Line :
+
+Vi - Repeating Commands
+Repeat a command by preceding it with a number
+5k = Move up a line 5 times
+80i<Text><ESC> = Insert <Text> 80 times
+80i_<Esc> = Insert 80 "_" characters
+
+Vi - Deleting Text
+x Delete a character
+dw Delete a word
+dd Delete a line
+D Delete from the current position
+
+Vi - Changing Text
+r Replace the current character
+cw Change the current word
+cc Change the current line
+c$ Change the text from the current position
+C Same as c$
+~ Reverses the case of a character
+
+Vi - Copying and Pasting
+yy Yank (copy) the current line
+y<position> Yank the <position>
+
+p Paste the most recent deleted or yanked text
+
+Vi - Undo / Red
+u Undo
+Ctrl-R Redo
+
+Vi - Searching
+/<pattern> Start a forward search
+?<pattern> Start a reverse search
+
+n Repeat the last search
+N Repeat the last search in the opposite direction
