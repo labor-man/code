@@ -1,0 +1,32 @@
+What Is the Shell?
+- user interface
+	- the command line interface(default interface)
+		- A program thar accepts your commands and executes those commands
+		- Also called a command line interpreter
+	- the graphical interface
+(The graphical interface is also a shell, However, if someone isn't specific and they say shell, they're typically talking about the command line interface.)
+
+
+Command Line interface vs a GUI 
+- The command line is more powerful
+- There will always be a command line
+- Server ditributions do not include GUIs
+- Desktop distributions have GUIs and CLIs
+
+two kinds of "root"
+- the beginning of the file system
+- OR the superuser account named root
+
+Root, the Superuser
+- Root access is typically restricted to system administrators
+- Root access may be required to to install, start, or stop an application
+(You may need root access if you're going to install an application that resides outside of your home directory.)
+- Day to day activities will be performed using a normal account.
+
+ Tilde Expansion(expand to that account's home directory.)
+ -	~jason = /home/jason
+ -	~root = /root
+ -	~ftp = /srv/ftp
+ (services often have their own accounts.)
+
+

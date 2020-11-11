@@ -1,0 +1,23 @@
+操作系统有两大阵营，一边是基于微软 Windows NT 的操作系统，一边是由UNIX衍生下来的操作系统。
+
+Linux, Mac OS X, Android, iOS, Chrome OS甚至路由器上的固件，这些操作系统同出一族，都是基于最初的UNIX系统开发而来，统称Unix-like 操作系统。
+
+Unix系统由AT&T贝尔实验室于1960年代开发。Unix哲学是专注于一件事去创造小而精的工具，并将他们做的完美。比如，在Linux终端上可以使用管道符组合几个工具去完成一项复杂的任务。在Unix系统中，一起皆文件，包括硬件设备和特殊文件在内，都属于文件。
+
+Unix的“子孙后代“
+截止目前，Unix已有40几年的历史，其子孙繁多。简单的说，Unix沿着个两个分支发展。
+
+学院派分支
+一个分支在学术界发展起来。这个分支中，比较出名的是BSD（Berkeley Software Distribution），它是一个开源的unix-like操作系统。BSD衍生出了 FreeBSD, NetBSD, 和 OpenBSD。NeXTStep也是基于BSD开发的，苹果公司的OS X 又是基于NeXTStep开发，iOS又在OS X基础上开发。
+
+MINIX是一个用于教学的Unix-like操作系统。首MINIX启发，大学生 Linus Torvalds开发了Linux操作系统。我们今天口口相传的Linux操作系统确切来说是GNU/Linux，至于为什么要加个‘GNU‘字样，那是另外一个话题了。GNU/Linux由 Linux kernel 内核和很多 GNU 工具组成。GNU/Linux并不是直接由BSD发展而来，但是它还是基于Unix，况且它出自校园，毕竟还是归结在学院派分支里。今天市面上常见的Android, Chrome OS和嵌入式操作系统，都是基于Linux操作系统开发的。
+
+商业分支
+AT&T UNIX, SCO UnixWare和Sun Microsystems Solaris这些是大公司开发的商业操作系统。商业操作系统不是经常接触到，不多说了。
+
+下图Unix族谱
+Unix族谱
+
+DOS 和 Windows NT
+随着IBM个人PC的流行，微软DOS操作系统在个人电脑上流行起来。DOS是一个与Unix完全不相干的操作系统，这一点可以从DOS使用反斜杠来表示文件目录分隔符上看出来。Unix在70年代就使用正斜杠来分割文件目录，但是80年代在个人电脑上流行起来的DOS并不支持文件目录。DOS使用正斜杠来表示转换字符，以至于后来DOS2.0支持了目录后选择用反斜杠表示目录分隔符。Windows 3.1, Windows 95, Windows 98, 和 Windows ME底层都是DOS，后来微软开发了新一代的操作系统Windows NT（Windows New Technology），Windows XP是其代表作。在此之后的Windows 7, Windows 8, Windows RT, Windows Phone 8, Windows Server都是Windows NT内核。Windows NT同样不是Unix-like操作系统。
+为了兼容之前的DOS系统和windows软件，Windows NT沿用了DOS的一些设计，比如磁盘符，目录反斜杠，正斜杠命令切换等。
