@@ -1,0 +1,104 @@
+File and Directory Permissions Explained
+ 
+Permissions
+-rw-rw-r-- 1 jason users 10400 Sep 27 08:52 sales.data
+
+First Char
+-	Regular file
+d 	Directory
+l	Symbolic link
+
+Other Char
+	   Permission 		File								Directory			
+r 		Read			Allows a file to be read 			Allows file names in the directory to be read
+w 		Write			Allows a file to modified			Allows entries to be modified within the directory
+x 		Execute			Allows the execution of a file      Allows access to contents and metadata for entries
+
+Permission Categories
+u 	User
+g 	Group
+o 	Other
+a 	All
+
+Groups
+Every user is in at least one group
+Users can belong to many groups
+Groups are used to organize users
+The groups command displays a user’s groups
+You can also use id -Gn
+
+
+
+Type(1)User(3)Group(3)Other(3)
+	⬇
+	⬇
+-rw-rw-r-- 1 jason users 10400 Sep 27 08:52 sales.data
+
+
+Changing Permissions
+chmod	Change mode command
+ugoa	User category:user, group, other, all
++-=		Add, subtract, or set permissions
+rwx		Read, Write, Execute
+
+
+Numeric Based Permissions 0-7
+ 
+r w x
+0 0 0	Value for off
+1 1 1	Binary value for on
+4 2 1	Base 10 value for on
+
+Order Has Meaning
+ugo
+
+Commonly Used Permissions
+-rwx------	700
+-rwxr-xr-x 	755
+-rw-rw-r-- 	664
+-rw-rw---- 	660
+-rw-r--r-- 	644
+
+Working with Groups
+New files belong to your primary group
+The chgrp command changes the group
+
+Directory Permissions Revisited
+Permissions on a directory can effect the files in the directory
+If the file permissions look correct, start checking directory permissions
+Work your way up to the root
+
+File Creation Mask
+File creation mask determines default permissions
+If no mask were used permissions would be:
+	777 for directories
+	666 for files
+
+The umask Command
+umask [-S] [mode]
+Sets the file creation mask to mode, if given
+Use -S to for symbolic notation
+
+ 					Directory 		File
+Base Permission    		777      	666 
+Subtract Umask     		-022     	-022 
+Creations Permission 	755 		644
+
+Octal Subtraction Is an Estimation
+ 					Directory 		File
+Base Permission 		777 		666
+Subtract Umask 			-007 		-007
+Creations Permission    770			660*
+
+Common umask modes
+022
+002
+077
+007
+
+Special Modes
+umask 0022 is the same as umask 022
+chmod 0644 is the same as chmod 644
+The special modes are: 
+not have to master it :)
+
