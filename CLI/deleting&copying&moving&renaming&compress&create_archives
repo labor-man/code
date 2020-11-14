@@ -1,0 +1,46 @@
+Removing Files
+rm file 	Remove file
+rm -r dir	Remove the directory and its contents recursively
+rm -f file 	Force removal and never prompt for confirmation
+
+Copying Files
+cp source_file destination_file		Copy source_file to destination_file
+cp src_file1 [src_fileN ...] dest_dir	Copy source_files to destination_directory
+
+cp Options
+cp -i 	Run in interactive mode
+cp -r source_directory destination 	Copy src_directory recursively to destination
+
+Moving and Renaming Files
+mv source destination 	Move or rename files and directories
+mv -i source destination
+
+Sorting Data
+sort file 	Sort text in file
+
+sort Options
+ -k F 	Sort by key. F is the field number
+ -r 	Sort in reverse order
+ -u 	Sort unique
+
+Creating a Collection of Files
+tar [-] c|x|t f tarfile [pattern] 	Create, extract or list contents of a tar archive using pattern, if supplied
+
+tar Options
+ c 			Create a tar archive
+ x			Extract files from the archive
+ t 			Display the table of contents (list)
+ v  		Be verbose
+ z 			Use compression
+ f file 	Use this file
+
+Compressing Files To Save Space	
+gzip	Compress files
+gunzip 	Uncompress files
+gzcat	Concatenates compressed files
+zcat	Concatenates compressed files
+
+Disk UsageEstimates file usage
+ du		Estimates file usage
+ du -k 	Display sizes in Kilobytes
+ du -h 	Display sizes in human readable format
