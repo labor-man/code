@@ -1,0 +1,36 @@
+The grep Command
+grep	Display lines matching a pattern
+grep pattern file
+
+grep Options
+-i	Perform a search, ignoring case
+-c 	Count the number of occurrences in a file
+-n 	Precede output with line numbers
+-v 	Invert Match. Print lines that don’t match
+
+The file Command
+file file_name 	Display the file type
+
+
+Searching for Text in Binary Files
+strings		Display printable strings
+
+Pipes
+| 	Pipe symbol
+command-output | command-input
+
+cat file | grep pattern
+
+
+The cut Command
+cut [file]		Cut out selected portions of file. If file is omitted,
+use standard input
+
+cut Options
+-d delimiter	Use delimiter as the field
+separator
+-f N 			Display the Nth field
+
+Piping Output to a Pager
+more
+less

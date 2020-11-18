@@ -1,0 +1,28 @@
+An environment variable is a storage location that has a name and a value. They often
+effect the way programs behave.
+
+Common Environment Variables
+EDITOR 		The program to run to perform edits.
+HOME The 	Home directory of the user.
+LOGNAME 	The login name of the user.
+MAIL 		The location of the user's local inbox.
+OLDPWD 		The previous working directory.
+PATH 		A colon separated list of directories to search for commands.
+PAGER 		This program may be called to view a file.
+PS1 		The primary prompt string.
+PWD 		The present working directory.
+USER 		The username of the user.
+
+Viewing Environment Variables
+printenv
+printenv PATH
+echo $PATH
+
+Exporting Environment Variables
+export TZ="TZ=America/Los_Angeles date"
+
+Removing Variables from the Environment
+unset TZ
+
+looking at it's man page to find what environment variables a given program uses.
+man

@@ -1,0 +1,25 @@
+Aliases
+Shortcuts
+Use for long commands
+Use for commands you type often
+
+
+Creating Aliases
+alias [name[=value]]
+List or create aliases
+Use name=value to create a new alias
+
+Fix Typos
+alias grpe='grep'
+
+Make Linux behave like another OS
+alias cls='clear'
+
+Removing Aliases
+unalias name	Remove the “name” alias
+unalias -a 	Remove all aliases
+
+
+Persisting Aliases
+Add aliases to your personal initialization
+files
