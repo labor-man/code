@@ -1,0 +1,44 @@
+Executed commands are added to the history
+Shell history can be displayed and recalled
+Shell history is storeed in memory and on disk
+	~/.bash_history
+	~/.history
+	~/.histfile
+
+history Command
+history 	Displays the shell history
+HISTSIZE 	Controls the number of commands to retain in history
+export HISTSIZE=1000
+
+!Syntax
+!N 	Repeat command line number N
+!! 	Repeat the previous command line
+!string 	Repeat the most recent command starting with "string"
+
+More ! Syntax
+
+!:N 	<Event> <Separator> <Word>
+! 		Represents a command line(or event)
+		! = The most recent command line
+		! = !!
+:N 		Represents a word on the command lin.
+		0 = command, 1 = first argument, etc
+
+Event More ! Syntax
+!^ 		Represents the first argument
+		!^ = !:1
+!$ 		Represents the last argument
+
+
+Searching Shell History
+Ctrl-r 	Reverse shell history search
+Enter 	Excute the command
+Arrow 	Change the command
+Ctrl-g 	Cancel the search
+
+Tab Auto Completion
+	Commands
+	Files, directories, paths
+	Environment Variables
+	Usernames(~)
+

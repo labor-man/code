@@ -1,0 +1,8 @@
+遇到棘手问题，重新安装
+
+psql	Logs me in with my current username(system)
+psql -U postgres 	Logs me in as the postgres user
+
+in psql
+\du		role table
+\q 	 	quit
