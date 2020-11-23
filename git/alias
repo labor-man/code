@@ -1,0 +1,8 @@
+创建-------------------------------------------------
+
+创建别名last
+git config alias.last 'log -1 --stat'	(git last = git log -1 --stat)
+git config alias.r reset	(git r <file> = git reset <file>)
+
+创建涉及外部命令的别名
+git config --global alias.p '!pwd'	(git p = pwd)
