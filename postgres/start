@@ -1,8 +1,55 @@
 遇到棘手问题，重新安装
 
-psql	Logs me in with my current username(system)
-psql -U postgres 	Logs me in as the postgres user
+使用brew安装----------------------------------------------------
+brew install postgresql
 
-in psql
+检查是否安装----------------------------------------------------
+brew list
+
+检查版本----------------------------------------------------
+psql --version
+
+错误处理----------------------------------------------------
+
+psql :could not connect to server: No such file or directory    Is the server running locally and accepting     connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+说明没启动，需要启动	brew services start postgresql
+
+psql----------------------------------------------------
+
+以角色<role>登入数据库（刚安装的数据库有postgres角色）
+psql -U <role> 	
+
+(打印信息里如果包含#，表示是超级管理员)
+
+psql <db_name>
+为数据库激活psql
+
+创建数据库
+CREATE DATABASE dbname
+
+psql命令会识别分号作为结束
+
+psql中不属于SQL的命令，以反斜线开头
+
+查看所有角色
 \du		role table
+
+帮助信息
+\h
+
+切换数据库
+\c DBNAME
+
+列出所有表
+\dt
+
+查看表描述
+\d+ tablename
+
+退出psql
 \q 	 	quit
+
+
+
+
+
