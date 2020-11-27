@@ -1,8 +1,60 @@
-ls- Listsdirectorycontents.
+查看-------------------------------------------------
+
+列出目录内容
+ls <dir>
+
+返回工作目录
+pwd
+
+连接并打印文件
+cat <file>
+
+将参数写入标准输出
+echo <arg>
+
+格式化并显示在线手册
+man <command>
+
+比较文件内容-------------------------------------------------
+
+逐行比较文件
+diff <file_a> <file_b>
+
+..........................
+2,5c2,4
+< second line from file a.
+< 
+< 
+< fifth line from file a.
+\ No newline at end of file
+---
+> second line from file b.
+> third line from file b.
+> fourth line from file b.
+\ No newline at end of file
+..........................
+LineNumFile1-Action-LineNumFile2
+Action = (A)dd (C)hange (D)elete
+
+文件差异的并排合并
+sdiff <file_a> <file_b>
+
+........................................................................
+same contents.							same contents.
+second line from file a.		  |	second line from file b.
+							      |	third line from file b.
+							      /	fourth line from file b.
+fifth line from file a.			  <%
+........................................................................
+
+使用Vim编辑文件的两个，三个或四个版本并显示差异
+vimdiff <file_a> <file_b>
+
+Ctrl-w w 	Go to next window
+:q			Quit (close current window)
+:qa			Quit all (close both files)
+:qa!		Force quit all
+
 cd - Changes the current directory.
-pwd - Displays the present working directory. 
-cat - Concatenates and displays files.
-echo - Displays arguments to the screen. 
-man - Displays the online manual. 
 exit-Exits the shell or your current session. 
 clear - Clears the screen.

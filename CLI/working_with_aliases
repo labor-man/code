@@ -1,25 +1,37 @@
-Aliases
-Shortcuts
-Use for long commands
-Use for commands you type often
+别名-------------------------------------------------------------
 
+列出所有别名
+alias
 
-Creating Aliases
+创建别名
 alias [name[=value]]
-List or create aliases
-Use name=value to create a new alias
 
-Fix Typos
-alias grpe='grep'
+移除别名
+unalias name
 
-Make Linux behave like another OS
-alias cls='clear'
+移除所有别名
+unalias -a
 
-Removing Aliases
-unalias name	Remove the “name” alias
-unalias -a 	Remove all aliases
+通配符（Wildcards）----------------------------------------------
 
+0或多个字符
+*
 
-Persisting Aliases
-Add aliases to your personal initialization
-files
+匹配一个字符
+?
+
+字符类
+[]
+........
+[aeiou]*
+[!aeiou] 匹配任何一个不在中括号的字符
+[a-g] 范围匹配
+........
+
+预定义的字符类
+[[:alpha:]]
+[[:alnum:]]
+[[:digit:]]
+[[:lower:]]
+[[:uppper:]]
+[[:space:]]
