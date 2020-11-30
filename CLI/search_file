@@ -1,0 +1,10 @@
+find path [expression]	在路径中递归查找与表达式匹配的文件。如果未提供任何参数，它将在当前目录中找到所有文件
+
+expression
+-name pattern		查找与模式匹配的文件和目录
+-iname pattern		查找与模式匹配的文件和目录，但是忽略大小写
+-ls					对找到的每个项目执行ls
+-mtime days			时间(+ -)
+-size num			大小(+ -)
+-newer file         查找比文件新的文件
+-exec command {} \;	对找到的所有文件运行命令

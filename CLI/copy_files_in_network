@@ -1,0 +1,14 @@
+将源头复制到目标
+scp source destination
+（scp：Secure copy）
+
+启动安全传输会话
+sftp host
+（sftp：SSH file transfer protocol）
+SCP - Secure copy
+SFTP - SSH file transfer protocol
+
+shell命令历史被储存在内存和硬盘中
+	~/.bash_history
+	~/.history
+	~/.histfile

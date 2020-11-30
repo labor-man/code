@@ -1,0 +1,26 @@
+改变用户或者成为超级管理员
+su [username]
+
+su选项
+-	切换到用户环境
+
+-c command 	指定要执行的命令
+
+显示当前环境用户名
+whoami
+
+以其他用户身份执行命令
+sudo
+（sudo：Super User Do）
+
+sudo选项
+sudo command 	以管理员身份运行
+sudo -u user command 	以用户user运行
+sudo su 	切换到超级管理员账户
+sudo su -	切换到超级管理员账户和root环境
+sudo su - username 	切换到user用户和环境
+sudo -s 	以root启动shell
+sudo -u user -s 	以user启动shell
+
+更改sudo配置
+visudo 	Edit the /etc/sudoers file

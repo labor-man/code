@@ -1,0 +1,16 @@
+I/O Name			Abbreviation	File Descriptor
+Standard Input 		stdin			0
+Standard Output 	stdout			1
+Standard Error		stderr			2
+
+重定向
+> 	将标准输出重定向到文件。覆盖（截断）现有内容
+>>	将标准输出重定向到文件。附加到任何现有内容
+<	将输入从文件重定向到命令
+	sort < file_list.txt
+& 	与重定向一起使用，以表示正在使用文件描述符
+2>&1	结合标准和标准输出
+		ls *.txt not-here > out 2>&1 
+2>file 	将标准错误重定向到文件
+
+>/dev/null 	吞掉输出

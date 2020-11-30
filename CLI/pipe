@@ -1,0 +1,16 @@
+command-output | command-input
+
+........................
+cat file | grep pattern
+........................
+
+剪切文件
+cut [file]
+
+cut选项
+-d delimiter	使用delimiter作为字段分隔符
+-f N 			显示第N个字段
+
+管道输出到分页器
+more
+less

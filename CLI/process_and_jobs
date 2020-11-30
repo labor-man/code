@@ -1,0 +1,44 @@
+列出进程
+ps
+
+ps 选项
+-e 				所有进程
+-f				格式化信息(更多信息)
+-u	username	筛选指定用户的进程
+-p  pid 		显示pid的进程信息
+
+互动式进程查看器
+top
+
+在后台启动命令
+command &
+
+杀掉前端进程
+Ctrl-c
+
+停止前端进程
+Ctrl-z
+
+列出工作
+jobs
+
+查看指定工作
+jobs [%num]
+
+后台化一个暂停进程
+bg [%num]		Background a suspended process
+
+前台化一个进程
+fg [%num]		Foreground a background process
+
+通过job编号或者PID杀掉一个进程
+kill [%num]/[PID]
+
+杀掉前台进程
+Ctrl-c
+
+向进程传递信号
+kill [-sig] pid 	Send a signal to a process
+
+列出所有可用的信号
+kill -l 			Display a list of signals

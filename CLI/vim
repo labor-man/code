@@ -1,12 +1,7 @@
-The Vi Editor
-Has advanced and powerful feature
-Not intuitive
-Harder to learn than nano
-Requires a time investment
+进入编辑器
+vim [file]
 
-The Vi Editor
-vi [file] Edit file
-vim [file] Same as vi, but more features
+只读模式进入编辑器
 view [file] Starts vim in read-only mode
 
 Vi Command Mode and Navigation

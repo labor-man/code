@@ -1,28 +1,25 @@
-An environment variable is a storage location that has a name and a value. They often
-effect the way programs behave.
+常见环境变量
+EDITOR 		执行编辑的程序
+HOME 		用户住目录
+LOGNAME 	用户登录名
+MAIL 		用户本地收件箱位置
+OLDPWD 		上一个工作目录
+PATH 		用冒号分隔的目录列表以搜索命令
+PAGER 		查看文件时调用的程序
+PS1 		主提示字符串
+PWD 		当前工作目录
+USER 		用户名
 
-Common Environment Variables
-EDITOR 		The program to run to perform edits.
-HOME The 	Home directory of the user.
-LOGNAME 	The login name of the user.
-MAIL 		The location of the user's local inbox.
-OLDPWD 		The previous working directory.
-PATH 		A colon separated list of directories to search for commands.
-PAGER 		This program may be called to view a file.
-PS1 		The primary prompt string.
-PWD 		The present working directory.
-USER 		The username of the user.
-
-Viewing Environment Variables
+查看环境变量
 printenv
 printenv PATH
 echo $PATH
 
-Exporting Environment Variables
+导出环境变量
 export TZ="TZ=America/Los_Angeles date"
 
-Removing Variables from the Environment
+删除
 unset TZ
 
-looking at it's man page to find what environment variables a given program uses.
-man
+查看手册页，查找给定程序使用的环境变量。
+man <command>

@@ -1,0 +1,11 @@
+列出所有别名
+alias
+
+创建别名
+alias [name[=value]]
+
+移除别名
+unalias name
+
+移除所有别名
+unalias -a

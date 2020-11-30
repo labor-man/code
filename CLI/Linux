@@ -1,20 +1,14 @@
-Linux
-
-- An Operating System:
+Linux is an Operating System:
 An operating system is simply a collection of software that manages hardware resources and provides an environment where applications can run. Operating system allows applications to store information, send documents to printers, interact with users, and other things.
 - A kernel:
 It's the layer that sits between the hardware and applications.
-- created by Linus Torvalds in 1991
-- First version released in 1994
 - FOSS(Free/Open Source Software)
 - Unix-Like
 
 Linux Distributions
-
 - Linux Kernel Plus Additional Software that together create an operating system.
 - Each distribution has a different focus.
 - Many distributions available to choose from
-
 
 Why Linux?
 - Run on many hardware platforms
@@ -38,8 +32,9 @@ Linux is Linux:
 - You can accomplish the same goals on most Linux distros
 - You cannot make a wrong choice
 
-
 SSH(Secure Shell):
 - a network protocol
 - it's primary purpose is to allow you to connect from one system to another system securely over a network
 - use terminal in mac(command:ssh <host>)
+
+
