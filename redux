@@ -1,0 +1,11 @@
+1. Describe application state as plain objects and arrays.
+2. Describe changes in the system as plain objects.
+3. Describe the logic for handling changes as pure functions.
+
+1. 用普通对象描述应用状态
+2. 用普通对象描述系统内的改变
+3. 用纯函数描述处理改变的逻辑
+
+The tradeoff that Redux offers is to add indirection to decouple “what happened” from “how things change”.
+
+Redux将“发生的事情”与“事情如何改变”脱钩

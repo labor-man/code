@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="705aa67a-0698-422d-b70e-006290b6985f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1606105771492</updated>
       <workItem from="1606105774462" duration="1000" />
-      <workItem from="1606909739157" duration="270000" />
+      <workItem from="1606909739157" duration="325000" />
+      <workItem from="1606967637647" duration="7000" />
     </task>
     <servers />
   </component>
@@ -71,6 +70,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="997" y="529" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606909778965">
