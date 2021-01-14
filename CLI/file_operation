@@ -18,7 +18,7 @@ mv source destination 	移动或重命名文件或文件夹
 mv -i source destination 使mv在移动将覆盖现有文件的文件之前将提示写入标准错误。如果来自标准输入的响应以字符“ y”或“ Y”开头，则尝试移动。
 
 创建文件集合
-tar [-] c|x|t f tarfile [pattern] 使用模式创建，提取或列出tar归档文件的内容（如果提供）
+tar [-] c|x|t|f tarfile [pattern] 使用模式创建，提取或列出tar归档文件的内容（如果提供）
 
 tar选项
  c 			创建archive
